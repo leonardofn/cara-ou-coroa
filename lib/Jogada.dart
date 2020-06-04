@@ -8,8 +8,11 @@ class Jogada extends StatefulWidget {
 class _JogadaState extends State<Jogada> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      backgroundColor: Colors.green,
+      body: Container(
+        
+      ),
     );
   }
 }
