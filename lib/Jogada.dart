@@ -1,4 +1,6 @@
+import 'package:cara_ou_coroa/Resultado.dart';
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class Jogada extends StatefulWidget {
   @override
@@ -9,6 +11,16 @@ class _JogadaState extends State<Jogada> {
 
   void _exibirResultado(){
 
+    var itens = ["cara","coroa"];
+    var numero = Random().nextInt(itens.length);
+    var resultado = itens[numero];
+
+    Navigator.push(
+      context, 
+      MaterialPageRoute(
+        builder: (context) => Resultado(resultado)
+      )
+    );
   }
 
   @override
